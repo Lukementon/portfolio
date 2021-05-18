@@ -12,7 +12,8 @@ const Contact = () => {
         <h4>Drop me a message here and I'll get back to you!</h4>
 
         <FormContainer>
-          <form name="contact" action="POST" data-netlify="true">
+          <form action="/contact" name="contact" method="post">
+            <input type="hidden" name="form-name" value="contact" />
             <div className="form">
               <input type="text" name="name" autoComplete="off" required />
               <label className="label-name" htmlFor="name">
@@ -21,13 +22,13 @@ const Contact = () => {
             </div>
             <div className="form">
               <input type="text" name="email" autoComplete="off" required />
-              <label className="label-name" htmlFor="name">
+              <label className="label-name" htmlFor="email">
                 <span className="content-name">Your Email</span>
               </label>
             </div>
             <div className="form">
               <input type="text" name="message" autoComplete="off" required />
-              <label className="label-name" htmlFor="name">
+              <label className="label-name" htmlFor="message">
                 <span className="content-name">Your Message</span>
               </label>
             </div>
