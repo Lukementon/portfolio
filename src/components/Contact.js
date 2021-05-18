@@ -12,7 +12,7 @@ const Contact = () => {
         <h4>Drop me a message here and I'll get back to you!</h4>
 
         <FormContainer>
-          <form action="/" name="contact" method="post">
+          <form action="/contact" name="contact" method="post">
             <input type="hidden" name="form-name" value="contact" />
             <div className="form">
               <input type="text" name="name" autoComplete="off" required />
