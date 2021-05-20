@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animations";
-import newProfilePic from "../img/new_profile_pic.jpg";
+import me from "../img/me.jpg";
 
 const AboutMe = () => {
   return (
@@ -39,7 +39,7 @@ const AboutMe = () => {
           variants={photoAnim}
           initial="hidden"
           animate="show"
-          src={newProfilePic}
+          src={me}
           alt="Luke Menton"
         />
       </div>
@@ -144,8 +144,8 @@ const Container = styled(motion.div)`
 
     img {
       width: 30rem;
-      height: 40rem;
-      object-fit: contain;
+      height: 30rem;
+      object-fit: cover;
     }
   }
 `;
