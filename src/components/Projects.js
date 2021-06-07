@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import allignment from "../img/allignment.png";
-import lyricbuddy from "../img/lyricbuddy.png";
+import Netflix from "../img/Netflix.png";
 import myignite from "../img/my-ignite.png";
 
 import { slider, sliderContainer, pageAnim, fadeTwo } from "../animations";
@@ -49,17 +49,18 @@ const Projects = () => {
         </ProjectWrapper>
         <ProjectWrapper>
           <Project>
-            <a href="https://lyric-app-lukementon.netlify.app">
-              <img src={lyricbuddy} alt="lyricbuddy screenshot" />
+            <a href="https://netflix-clone-686cc.web.app/profile">
+              <img src={Netflix} alt="lyricbuddy screenshot" />
             </a>
           </Project>
           <ProjectDescription>
-            <h3>Lyric finder App</h3>
+            <h3>Netflix Clone</h3>
             <p>
-              Web App that displays the top chart songs and allows the user to
-              request and read the lyrics. The App also displays the song title,
-              artist and album name. Ive used react router for access between
-              the homepage and for state management I went with the Context API.
+              Full Stack Netflix clone built with React, Redux, Stripe and
+              Firebase. This has full login and user authentication using Redux
+              and Firebase. It also has full payment functionality with Stripe.
+              A user can only access the movie homepage if they have subscribed
+              to a plan.
             </p>
           </ProjectDescription>
         </ProjectWrapper>
