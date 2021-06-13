@@ -49,8 +49,8 @@ const Projects = () => {
         </ProjectWrapper>
         <ProjectWrapper>
           <Project>
-            <a href="https://netflix-clone-686cc.web.app/profile">
-              <img src={Netflix} alt="lyricbuddy screenshot" />
+            <a href="https://luke-netflix-build-ef64a.web.app/">
+              <img src={Netflix} alt="netflix clone screenshot" />
             </a>
           </Project>
           <ProjectDescription>
