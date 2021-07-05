@@ -32,10 +32,10 @@ const Goals = () => {
         <h3>Some of the technolgies I plan on learning soon:</h3>
       </Title>
       <StyledGoals
-        variants={scrollRevealTwo}
-        ref={element}
-        initial="hidden"
-        animate={controls}
+      // variants={scrollRevealTwo}
+      // ref={element}
+      // initial="hidden"
+      // animate={controls}
       >
         <StyledGoal>
           <img src={node} alt="node js logo" />
@@ -58,25 +58,23 @@ const Goals = () => {
 };
 
 const Container = styled(motion.div)`
-  height: 60vh;
-  padding: 3rem 20rem 0rem 20rem;
+  padding: 5rem 20rem 5rem 20rem;
   display: flex;
   flex-direction: column;
   line-height: 1.5rem;
   background: rgb(25, 25, 25);
   color: white;
   @media (max-width: 1640px) {
-    padding: 1rem 10rem;
+    padding: 5rem 10rem;
   }
   @media (max-width: 1335px) {
     font-size: 90%;
   }
   @media (max-width: 1315px) {
-    padding: 1rem 5rem;
+    padding: 5rem 5rem;
   }
   @media (max-width: 985px) {
-    padding: 1rem 1rem;
-    height: 70vh;
+    padding: 5rem 1rem;
   }
   h1 {
     font-size: 3rem;
@@ -106,7 +104,7 @@ const Title = styled(motion.div)`
 `;
 
 const StyledGoals = styled(motion.div)`
-  padding-top: 1rem;
+  padding-top: 3rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;

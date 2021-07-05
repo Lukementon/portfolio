@@ -12,10 +12,10 @@ const ProjectDescription = () => {
       <StyledProjectDescription>
         <motion.div
           className="description-title"
-          variants={scrollRevealThree}
-          ref={element}
-          initial="hidden"
-          animate={controls}
+          // variants={scrollRevealThree}
+          // ref={element}
+          // initial="hidden"
+          // animate={controls}
         >
           <h3>The process</h3>
           <p>
@@ -42,10 +42,10 @@ const ProjectDescription = () => {
         </motion.div>
         <motion.div
           className="list"
-          variants={scrollRevealThree}
-          ref={element}
-          initial="hidden"
-          animate={controls}
+          // variants={scrollRevealThree}
+          // ref={element}
+          // initial="hidden"
+          // animate={controls}
         >
           <h4>The development process included the following steps:</h4>
 
@@ -78,7 +78,6 @@ const ProjectDescription = () => {
 
 const StyledProjectDescription = styled(motion.div)`
   overflow: hidden;
-  height: 80vh;
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -96,8 +95,11 @@ const StyledProjectDescription = styled(motion.div)`
     padding: 1rem 1rem;
     text-align: center;
   }
-  @media (max-width: 780px) {
-    height: 95vh;
+  @media (max-width: 960px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0rem;
   }
 
   color: white;
@@ -106,6 +108,10 @@ const StyledProjectDescription = styled(motion.div)`
     width: 50%;
     padding: 0rem 5rem 0rem 0rem;
     line-height: 1.5rem;
+    @media (max-width: 960px) {
+      width: 90%;
+      padding: 0rem;
+    }
     @media (max-width: 780px) {
       padding: 0rem 1rem 0rem 0rem;
     }
@@ -132,6 +138,9 @@ const StyledProjectDescription = styled(motion.div)`
         margin-top: 1rem;
         padding: 0.5rem 1rem;
       }
+      @media (max-width: 960px) {
+        margin-bottom: 2rem;
+      }
       :hover {
         transform: scale(0.98);
       }
@@ -156,6 +165,14 @@ const StyledProjectDescription = styled(motion.div)`
       width: 100%;
       margin-bottom: 1rem;
       border-bottom: 1px solid #8900ff;
+    }
+    @media (max-width: 960px) {
+      width: 90%;
+    }
+    @media (max-width: 375px) {
+      li {
+        border-bottom: 0;
+      }
     }
   }
 `;

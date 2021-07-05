@@ -91,32 +91,27 @@ const Projects = () => {
 
 const Container = styled(motion.div)`
   overflow: hidden;
-  height: 150vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 3rem 20rem 0rem 20rem;
+  padding: 5rem 20rem 5rem 20rem;
   background: rgb(30, 30, 30);
   color: white;
   @media (max-width: 1640px) {
-    padding: 1rem 10rem;
+    padding: 5rem 10rem;
   }
 
   @media (max-width: 1335px) {
-    padding: 2rem 5rem;
+    padding: 5rem 5rem;
+    font-size: 90%;
+  }
+  @media (max-width: 1315px) {
+    padding: 3rem 0rem;
     font-size: 90%;
   }
 
-  @media (max-width: 1315px) {
-    align-items: center;
-    padding: 1rem 5rem;
-    height: 230vh;
-  }
-  @media (max-width: 985px) {
-    padding: 1rem 1rem;
-  }
   @media (max-width: 780px) {
     align-items: center;
     justify-content: flex-start;
@@ -125,6 +120,9 @@ const Container = styled(motion.div)`
   h1 {
     font-size: 3rem;
     padding: 1rem 0rem 1rem 0rem;
+    @media (max-width: 1315px) {
+      align-self: center;
+    }
   }
   span {
     background: -webkit-linear-gradient(180deg, #9100c6, #8900ff);
@@ -147,6 +145,7 @@ const ProjectWrapper = styled(motion.div)`
   @media (max-width: 1315px) {
     flex-direction: column;
     justify-content: flex-start;
+    text-align: center;
   }
 `;
 
@@ -160,7 +159,21 @@ const ProjectDescription = styled(motion.div)`
   line-height: 1.5rem;
   margin-left: 2rem;
   @media (max-width: 1315px) {
+    width: 50%;
+    align-items: center;
     margin: 2rem 0rem 0rem 0rem;
+  }
+  @media (max-width: 1100px) {
+    width: 70%;
+  }
+  @media (max-width: 1100px) {
+    width: 70%;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+  @media (max-width: 400px) {
+    width: 90%;
   }
   h3 {
     padding-bottom: 1rem;
@@ -175,8 +188,21 @@ const Project = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 3rem;
+  @media (max-width: 1315px) {
+    width: 50%;
+  }
+  @media (max-width: 1100px) {
+    width: 70%;
+  }
+
   @media (max-width: 780px) {
     padding: 0rem;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+  @media (max-width: 400px) {
+    width: 90%;
   }
 
   img {

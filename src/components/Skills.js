@@ -18,10 +18,10 @@ const Skills = () => {
         My <span>Skills</span>{" "}
       </h1>
       <StyledSkills
-        variants={scrollReveal}
-        ref={element}
-        initial="hidden"
-        animate={controls}
+      // variants={scrollReveal}
+      // ref={element}
+      // initial="hidden"
+      // animate={controls}
       >
         <Skill>
           <img src={html} alt="sass logo" />
@@ -49,8 +49,8 @@ const Skills = () => {
 
 const Container = styled(motion.div)`
   overflow: hidden;
-  height: 40vh;
-  padding: 3rem 20rem 0rem 20rem;
+
+  padding: 5rem 20rem 5rem 20rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -58,16 +58,16 @@ const Container = styled(motion.div)`
   background: rgb(30, 30, 30);
   color: white;
   @media (max-width: 1640px) {
-    padding: 1rem 10rem;
+    padding: 5rem 10rem;
   }
   @media (max-width: 1335px) {
     font-size: 90%;
   }
   @media (max-width: 1315px) {
-    padding: 1rem 5rem;
+    padding: 5rem 5rem;
   }
   @media (max-width: 985px) {
-    padding: 1rem 1rem;
+    padding: 5rem 1rem;
   }
   h1 {
     font-size: 3rem;

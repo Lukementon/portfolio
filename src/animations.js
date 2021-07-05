@@ -104,7 +104,7 @@ export const scrollRevealThree = {
 export const slider = {
   hidden: { x: "-130%", skew: "30deg" },
   show: {
-    x: "250%",
+    x: "300%",
     skew: "-60deg",
     transition: { ease: "easeOut", duration: 1 },
   },

@@ -48,9 +48,8 @@ const AboutMe = () => {
 };
 
 const Container = styled(motion.div)`
-  height: 90vh;
   width: 100%;
-  padding: 1rem 20rem 1rem 20rem;
+  padding: 10rem 20rem 10rem 20rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,11 +65,16 @@ const Container = styled(motion.div)`
     padding: 1rem 5rem;
   }
   @media (max-width: 985px) {
-    padding: 1rem 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+  @media (max-width: 560px) {
+    padding: 1rem 2rem;
+  }
+  @media (max-width: 560px) {
+    padding: 1rem 1rem;
   }
 
   .description {
@@ -139,12 +143,18 @@ const Container = styled(motion.div)`
     justify-content: center;
     overflow: hidden;
     @media (max-width: 985px) {
-      width: 100%;
+      width: 60%;
+    }
+    @media (max-width: 800px) {
+      width: 70%;
+    }
+    @media (max-width: 555px) {
+      width: 80%;
     }
 
     img {
-      width: 30rem;
-      height: 30rem;
+      width: 25rem;
+      height: 25rem;
       object-fit: cover;
     }
   }
