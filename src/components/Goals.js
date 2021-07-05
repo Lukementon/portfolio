@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { scrollRevealTwo } from "../animations";
-import { useScroll } from "./useScroll";
 import node from "../img/nodejs-icon.svg";
 import mongodb from "../img/mongodb-icon-1.svg";
 import python from "../img/python-5.svg";
@@ -10,7 +8,6 @@ import vue from "../img/vue-9.svg";
 import php from "../img/php-1.svg";
 
 const Goals = () => {
-  const [element, controls] = useScroll();
   return (
     <Container>
       <Title>

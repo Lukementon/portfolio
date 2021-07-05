@@ -1,12 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { scrollRevealThree } from "../animations";
-import { useScroll } from "./useScroll";
 import { Link } from "react-router-dom";
 
 const ProjectDescription = () => {
-  const [element, controls] = useScroll();
   return (
     <>
       <StyledProjectDescription>

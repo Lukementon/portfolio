@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { scrollReveal } from "../animations";
-import { useScroll } from "./useScroll";
+
 import javascript from "../img/logo-javascript.svg";
 import redux from "../img/redux.svg";
 import sass from "../img/sass-1.svg";
@@ -11,7 +10,6 @@ import css from "../img/css-5.svg";
 import react from "../img/react-2.svg";
 
 const Skills = () => {
-  const [element, controls] = useScroll();
   return (
     <Container>
       <h1>
