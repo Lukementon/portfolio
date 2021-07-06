@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import allignment from "../img/allignment.png";
 import Netflix from "../img/Netflix.png";
 import myignite from "../img/my-ignite.png";
+import realfitness from "../img/realfitness.png";
 
 import { slider, sliderContainer, pageAnim, fadeTwo } from "../animations";
 
@@ -30,22 +31,20 @@ const Projects = () => {
         <ProjectWrapper>
           <Project>
             <a href="https://lukementon-gaming-app.netlify.app">
-              <img src={allignment} alt="allignment screenshot" />
+              <img src={realfitness} alt="realfitness screenshot" />
             </a>
           </Project>
           <ProjectDescription>
             <div className="description-container">
-              <h3>Gaming App with search component</h3>
+              <h3>Real Fitness</h3>
               <p>
-                React gaming project using the Rawg IO API to request games and
-                information. This project uses react router and has three pages,
-                each making different requests to filter different categories of
-                games. I have also included a search component to allow the user
-                to request specific games.
+                Personal training website for a client. Built with React and
+                uses firebase for hosting and for the contact form database.
+                This website is fully responsive and incredibly clean.
               </p>
               <p>
-                For CSS and animations I've used styled components with framer
-                motion.
+                Technologies used include react, javascript, firebase,
+                react-router, vanilla css and styled components.
               </p>
             </div>
           </ProjectDescription>
@@ -89,6 +88,29 @@ const Projects = () => {
                 user clicks on a game it pulls out more content from the API
                 such as the rating, available platforms, a description and
                 screenshots.
+              </p>
+            </div>
+          </ProjectDescription>
+        </ProjectWrapper>
+        <ProjectWrapper>
+          <Project>
+            <a href="https://lukementon-gaming-app.netlify.app">
+              <img src={allignment} alt="allignment screenshot" />
+            </a>
+          </Project>
+          <ProjectDescription>
+            <div className="description-container">
+              <h3>Gaming App with search component</h3>
+              <p>
+                React gaming project using the Rawg IO API to request games and
+                information. This project uses react router and has three pages,
+                each making different requests to filter different categories of
+                games. I have also included a search component to allow the user
+                to request specific games.
+              </p>
+              <p>
+                For CSS and animations I've used styled components with framer
+                motion.
               </p>
             </div>
           </ProjectDescription>
@@ -145,7 +167,7 @@ const ProjectWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: gray;
+  background: #939393;
   border-radius: 1rem;
   overflow: hidden;
 `;
