@@ -30,7 +30,7 @@ const Projects = () => {
       <StyledProjects variants={fadeTwo}>
         <ProjectWrapper>
           <Project>
-            <a href="https://lukementon-gaming-app.netlify.app">
+            <a href="https://real-fitness-c7b34.web.app/">
               <img src={realfitness} alt="realfitness screenshot" />
             </a>
           </Project>
