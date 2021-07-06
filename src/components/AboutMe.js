@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animations";
-import me from "../img/me.jpg";
+import me from "../img/closeup.jpg";
 
 const AboutMe = () => {
   return (
@@ -56,13 +56,13 @@ const Container = styled(motion.div)`
   background-color: rgb(25, 25, 25);
   color: white;
   @media (max-width: 1640px) {
-    padding: 1rem 10rem;
+    padding: 5rem 10rem;
   }
   @media (max-width: 1335px) {
     font-size: 90%;
   }
   @media (max-width: 1315px) {
-    padding: 1rem 5rem;
+    padding: 5rem 5rem;
   }
   @media (max-width: 985px) {
     flex-direction: column;
@@ -70,11 +70,9 @@ const Container = styled(motion.div)`
     justify-content: center;
     text-align: center;
   }
+
   @media (max-width: 560px) {
-    padding: 1rem 2rem;
-  }
-  @media (max-width: 560px) {
-    padding: 1rem 1rem;
+    padding: 3rem 1rem;
   }
 
   .description {
@@ -86,16 +84,16 @@ const Container = styled(motion.div)`
     justify-content: center;
 
     @media (max-width: 985px) {
-      width: 100%;
+      width: 80%;
       display: block;
       padding-top: 0rem;
+      width: 100%;
     }
 
     h1 {
       top: 0;
       font-size: 3rem;
       margin-bottom: 3rem;
-
       @media (max-width: 985px) {
         margin-bottom: 0.5rem;
       }
@@ -123,15 +121,15 @@ const Container = styled(motion.div)`
       background: #8900ff;
       cursor: pointer;
       transition: all 0.5s ease;
+      font-weight: 600;
       :hover {
         transform: scale(0.98);
       }
-      @media (max-width: 985px) {
-        margin: 1rem 0rem;
-        align-self: center;
-      }
       @media (max-width: 1335px) {
         font-size: 90%;
+      }
+      @media (max-width: 985px) {
+        margin: 1rem;
       }
     }
   }

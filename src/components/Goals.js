@@ -73,6 +73,10 @@ const Container = styled(motion.div)`
   @media (max-width: 985px) {
     padding: 5rem 1rem;
   }
+  @media (max-width: 448px) {
+    text-align: center;
+  }
+
   h1 {
     font-size: 3rem;
     padding: 1rem 0rem 3rem 0rem;
@@ -95,6 +99,9 @@ const Title = styled(motion.div)`
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  @media (max-width: 448px) {
+    align-items: center;
+  }
   h3 {
     font-weight: lighter;
   }
@@ -115,8 +122,11 @@ const StyledGoals = styled(motion.div)`
 const StyledGoal = styled(motion.div)`
   padding-top: 1rem;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 1);
-  @media (max-width: 985px) {
+  margin: 0 1rem 1rem 0;
+  @media (max-width: 640px) {
+    margin-top: 2rem;
   }
+
   img {
     height: 5rem;
     width: 5rem;

@@ -34,17 +34,20 @@ const Projects = () => {
             </a>
           </Project>
           <ProjectDescription>
-            <h3>Gaming App with search component</h3>
-            <p>
-              React gaming project using the Rawg IO API to request games and
-              information. This project uses react router and has three pages,
-              each making different requests to filter different categories of
-              games. I have also included a search component to allow the user
-              to request specific games.
-              <br />
-              For CSS and animations I've used styled components with framer
-              motion.
-            </p>
+            <div className="description-container">
+              <h3>Gaming App with search component</h3>
+              <p>
+                React gaming project using the Rawg IO API to request games and
+                information. This project uses react router and has three pages,
+                each making different requests to filter different categories of
+                games. I have also included a search component to allow the user
+                to request specific games.
+              </p>
+              <p>
+                For CSS and animations I've used styled components with framer
+                motion.
+              </p>
+            </div>
           </ProjectDescription>
         </ProjectWrapper>
         <ProjectWrapper>
@@ -54,14 +57,16 @@ const Projects = () => {
             </a>
           </Project>
           <ProjectDescription>
-            <h3>Netflix Clone</h3>
-            <p>
-              Full Stack Netflix clone built with React, Redux, Stripe and
-              Firebase. This has full login and user authentication using Redux
-              and Firebase. It also has full payment functionality with Stripe.
-              A user can only access the movie homepage if they have subscribed
-              to a plan.
-            </p>
+            <div className="description-container">
+              <h3>Netflix Clone</h3>
+              <p>
+                Full Stack Netflix clone built with React, Redux, Stripe and
+                Firebase. This has full login and user authentication using
+                Redux and Firebase. It also has full payment functionality with
+                Stripe. A user can only access the movie homepage if they have
+                subscribed to a plan.
+              </p>
+            </div>
           </ProjectDescription>
         </ProjectWrapper>
         <ProjectWrapper>
@@ -71,17 +76,21 @@ const Projects = () => {
             </a>
           </Project>
           <ProjectDescription>
-            <h3>Redux Gaming App</h3>
-            <p>
-              A similar version of the previous application but with a few
-              changes. I've used Redux for the state management this time and
-              have made a few changes to the UI and layout of the website.
-              <br />
-              Three categories of games are rendered as soon as the page loads.
-              I've also added a game details component so that when the user
-              clicks on a game it pulls out more content from the API such as
-              the rating, available platforms, a description and screenshots.
-            </p>
+            <div className="description-container">
+              <h3>Redux Gaming App</h3>
+              <p>
+                A similar version of the previous application but with a few
+                changes. I've used Redux for the state management this time and
+                have made a few changes to the UI and layout of the website.
+              </p>
+              <p>
+                Three categories of games are rendered as soon as the page
+                loads. I've also added a game details component so that when the
+                user clicks on a game it pulls out more content from the API
+                such as the rating, available platforms, a description and
+                screenshots.
+              </p>
+            </div>
           </ProjectDescription>
         </ProjectWrapper>
       </StyledProjects>
@@ -94,35 +103,23 @@ const Container = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  text-align: center;
   padding: 5rem 20rem 5rem 20rem;
   background: rgb(30, 30, 30);
   color: white;
-  @media (max-width: 1640px) {
-    padding: 5rem 10rem;
-  }
-
-  @media (max-width: 1335px) {
+  @media (max-width: 1610px) {
     padding: 5rem 5rem;
-    font-size: 90%;
   }
-  @media (max-width: 1315px) {
-    padding: 3rem 0rem;
-    font-size: 90%;
+  @media (max-width: 1015px) {
+    padding: 5rem 5rem;
   }
-
-  @media (max-width: 780px) {
-    align-items: center;
-    justify-content: flex-start;
+  @media (max-width: 770px) {
+    padding: 5rem 1rem;
   }
 
   h1 {
     font-size: 3rem;
-    padding: 1rem 0rem 1rem 0rem;
-    @media (max-width: 1315px) {
-      align-self: center;
-    }
+    padding: 0rem 0rem 3rem 0rem;
   }
   span {
     background: -webkit-linear-gradient(180deg, #9100c6, #8900ff);
@@ -132,79 +129,46 @@ const Container = styled(motion.div)`
 `;
 
 const StyledProjects = styled(motion.div)`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-column-gap: 5rem;
+  grid-row-gap: 3rem;
+  @media (max-width: 1241px) {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  @media (max-width: 431px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 `;
 
 const ProjectWrapper = styled(motion.div)`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  @media (max-width: 1315px) {
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-  }
+  background: gray;
+  border-radius: 1rem;
+  overflow: hidden;
 `;
 
 const ProjectDescription = styled(motion.div)`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 50%;
+  text-align: center;
   height: 100%;
   line-height: 1.5rem;
-  margin-left: 2rem;
-  @media (max-width: 1315px) {
-    width: 50%;
-    align-items: center;
-    margin: 2rem 0rem 0rem 0rem;
-  }
-  @media (max-width: 1100px) {
-    width: 70%;
-  }
-  @media (max-width: 1100px) {
-    width: 70%;
-  }
-  @media (max-width: 600px) {
-    width: 80%;
-  }
-  @media (max-width: 400px) {
-    width: 90%;
-  }
+  padding: 0 1rem;
   h3 {
-    padding-bottom: 1rem;
+    padding: 2rem 0;
+  }
+  p {
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
   }
 `;
 
 const Project = styled.div`
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 1);
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
-  @media (max-width: 1315px) {
-    width: 50%;
-  }
-  @media (max-width: 1100px) {
-    width: 70%;
-  }
-
-  @media (max-width: 780px) {
-    padding: 0rem;
-  }
-  @media (max-width: 600px) {
-    width: 80%;
-  }
-  @media (max-width: 400px) {
-    width: 90%;
-  }
-
   img {
     cursor: pointer;
     width: 100%;

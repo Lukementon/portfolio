@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <ul>
-        <li>Designed and built by Luke Menton</li>
+        <li>Created by Luke Menton</li>
         <div className="icons">
           <li>
             <a href="https://www.linkedin.com/in/luke-menton-009748211/">

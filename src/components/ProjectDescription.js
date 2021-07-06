@@ -83,6 +83,9 @@ const StyledProjectDescription = styled(motion.div)`
   @media (max-width: 1675px) {
     padding: 1rem 10rem;
   }
+  @media (max-width: 1610px) {
+    padding: 1rem 5rem;
+  }
 
   @media (max-width: 1335px) {
     padding: 2rem 5rem;
@@ -91,12 +94,15 @@ const StyledProjectDescription = styled(motion.div)`
   @media (max-width: 985px) {
     padding: 1rem 1rem;
     text-align: center;
+    padding: 5rem 5rem;
   }
   @media (max-width: 960px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0rem;
+  }
+  @media (max-width: 770px) {
+    padding: 5rem 1rem;
   }
 
   color: white;
@@ -106,11 +112,8 @@ const StyledProjectDescription = styled(motion.div)`
     padding: 0rem 5rem 0rem 0rem;
     line-height: 1.5rem;
     @media (max-width: 960px) {
-      width: 90%;
+      width: 100%;
       padding: 0rem;
-    }
-    @media (max-width: 780px) {
-      padding: 0rem 1rem 0rem 0rem;
     }
 
     h4 {
@@ -126,6 +129,7 @@ const StyledProjectDescription = styled(motion.div)`
       padding: 0.5rem 3rem;
       font-size: 1rem;
       width: 50%;
+      font-weight: 600;
       background: #8900ff;
       color: white;
       border: none;

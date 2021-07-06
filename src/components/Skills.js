@@ -47,7 +47,6 @@ const Skills = () => {
 
 const Container = styled(motion.div)`
   overflow: hidden;
-
   padding: 5rem 20rem 5rem 20rem;
   display: flex;
   flex-direction: column;
@@ -65,7 +64,10 @@ const Container = styled(motion.div)`
     padding: 5rem 5rem;
   }
   @media (max-width: 985px) {
-    padding: 5rem 1rem;
+    padding: 5rem 2rem;
+  }
+  @media (max-width: 448px) {
+    align-items: center;
   }
   h1 {
     font-size: 3rem;
@@ -92,6 +94,10 @@ const StyledSkills = styled(motion.div)`
 
 const Skill = styled(motion.div)`
   box-shadow: 0px 15px 25px rgba(5, 5, 5, 1);
+  margin: 0 1rem 1rem 0;
+  @media (max-width: 640px) {
+    margin-top: 2rem;
+  }
   img {
     height: 5rem;
     width: 5rem;
