@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import allignment from "../img/allignment.png";
+import glass from "../img/glass.png";
 import Netflix from "../img/Netflix.png";
 import myignite from "../img/my-ignite.png";
 import realfitness from "../img/realfitness.png";
@@ -94,23 +94,21 @@ const Projects = () => {
         </ProjectWrapper>
         <ProjectWrapper>
           <Project>
-            <a href="https://lukementon-gaming-app.netlify.app">
-              <img src={allignment} alt="allignment screenshot" />
+            <a href="https://inspiring-sammet-186868.netlify.app">
+              <img src={glass} alt="glass screenshot" />
             </a>
           </Project>
           <ProjectDescription>
             <div className="description-container">
-              <h3>Gaming App with search component</h3>
+              <h3>Glassy UI</h3>
               <p>
-                React gaming project using the Rawg IO API to request games and
-                information. This project uses react router and has three pages,
-                each making different requests to filter different categories of
-                games. I have also included a search component to allow the user
-                to request specific games.
+                Simple UI desgn that gives off a glassy kind of effect. Done
+                with basic HTML and CSS. I used the psuedo CSS attribute to give
+                the status bar the effect of being 60% full.
               </p>
               <p>
-                For CSS and animations I've used styled components with framer
-                motion.
+                No frameworks used in this design, just simple HTML, and CSS
+                styling.
               </p>
             </div>
           </ProjectDescription>
@@ -167,7 +165,7 @@ const ProjectWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #939393;
+  background: rgb(50, 50, 50);
   border-radius: 1rem;
   overflow: hidden;
 `;

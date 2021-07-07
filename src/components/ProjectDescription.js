@@ -78,7 +78,7 @@ const StyledProjectDescription = styled(motion.div)`
   width: 100%;
   display: flex;
   align-items: flex-start;
-  padding: 3rem 20rem 0rem 20rem;
+  padding: 3rem 20rem 3rem 20rem;
   background: rgb(35, 35, 35);
   @media (max-width: 1675px) {
     padding: 1rem 10rem;
