@@ -2,20 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { scrollRevealThree } from "../animations";
-import { useScroll } from "./useScroll";
 
 const ProjectDescription = () => {
-  const [element, controls] = useScroll();
   return (
     <>
       <StyledProjectDescription>
         <motion.div
           className="description-title"
-          variants={scrollRevealThree}
-          ref={element}
-          initial="hidden"
-          animate={controls}
+          // variants={scrollRevealThree}
+          // ref={element}
+          // initial="hidden"
+          // animate={controls}
         >
           <h3>The process</h3>
           <p>
@@ -42,10 +39,10 @@ const ProjectDescription = () => {
         </motion.div>
         <motion.div
           className="list"
-          variants={scrollRevealThree}
-          ref={element}
-          initial="hidden"
-          animate={controls}
+          // variants={scrollRevealThree}
+          // ref={element}
+          // initial="hidden"
+          // animate={controls}
         >
           <h4>The development process included the following steps:</h4>
 
