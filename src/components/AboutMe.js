@@ -17,7 +17,7 @@ const AboutMe = () => {
         </Hide>
         <Hide>
           <motion.h3 variants={titleAnim} initial="hidden" animate="show">
-            Frontend Web Developer and Desgner
+            Frontend Web Developer and Designer
           </motion.h3>
         </Hide>
         <Hide>

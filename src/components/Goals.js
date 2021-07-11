@@ -21,12 +21,12 @@ const Goals = () => {
           websites.
           <br />I have such a passion for development and it's so enjoyable when
           learning new things. I really enjoy building interfaces and I believe
-          that they make or break the user expericnce. At the same time I find
+          that they make or break the user experience. At the same time I find
           server side programming fascinating and that is definitely what I plan
           on learning next.
         </p>
         <br />
-        <h3>Some of the technolgies I plan on learning soon:</h3>
+        <h3>Some of the technologies I plan on learning soon:</h3>
       </Title>
       <StyledGoals
       // variants={scrollRevealTwo}

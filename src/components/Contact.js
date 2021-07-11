@@ -45,6 +45,7 @@ const Contact = () => {
 };
 
 const Container = styled(motion.div)`
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;

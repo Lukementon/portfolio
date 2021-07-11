@@ -29,8 +29,8 @@ const ProjectDescription = () => {
           <h4>Attention to Detail</h4>
           <p>
             I believe that attention to detail is the most important thing when
-            working on a project, whether its a small personal project, or for a
-            client. When every detail is taken into account, it guarantees
+            working on a project, whether it's a small personal project, or for
+            a client. When every detail is taken into account, it guarantees
             success and ensures that the project will stand out from the rest.
           </p>
           <Link to="/contact">
@@ -57,7 +57,7 @@ const ProjectDescription = () => {
             <li>
               Adding media queries to allow the application to be responsive.
             </li>
-            <li>Debbugging any issues with the browser DevTools.</li>
+            <li>Debugging any issues with the browser DevTools.</li>
             <li>
               Using React, and other popular plugins to add more structure to
               the application.
