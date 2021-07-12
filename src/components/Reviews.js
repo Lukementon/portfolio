@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { AiFillStar } from "react-icons/ai";
 
 const Reviews = () => {
   return (
@@ -8,10 +9,16 @@ const Reviews = () => {
       <Container>
         <Title>
           <h1>
-            Client
-            <span> Reviews</span>
+            <span>Reviews</span>
           </h1>
           <h3>Jason K</h3>
+          <div className="stars">
+            <AiFillStar className="star" />
+            <AiFillStar className="star" />
+            <AiFillStar className="star" />
+            <AiFillStar className="star" />
+            <AiFillStar className="star" />
+          </div>
           <p>
             I highly recommend Luke for the services he provided me in setting
             up my website. Being busy growing my business, a website was
@@ -58,9 +65,18 @@ const Container = styled(motion.div)`
     text-align: center;
   }
 
-  h1 {
-    font-size: 3rem;
-    padding: 1rem 0rem 3rem 0rem;
+  .heading {
+    }
+    span {
+      background: -webkit-linear-gradient(180deg, #9100c6, #8900ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h1 {
+      font-size: 3rem;
+      padding: 1rem 0rem 3rem 0rem;
+    }
   }
 
   h3 {
@@ -79,12 +95,7 @@ const Container = styled(motion.div)`
     @media (max-width: 985px) {
       padding-bottom: 0rem;
     }
-  }
-  span {
-    background: -webkit-linear-gradient(180deg, #9100c6, #8900ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  
 `;
 
 const Title = styled(motion.div)`
@@ -92,6 +103,16 @@ const Title = styled(motion.div)`
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  .stars {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .star {
+    color: rgb(255, 236, 126);
+    font-size: 1.5rem;
+  }
   @media (max-width: 448px) {
     align-items: center;
   }
