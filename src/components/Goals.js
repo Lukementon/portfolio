@@ -82,7 +82,12 @@ const Container = styled(motion.div)`
     padding: 1rem 0rem 3rem 0rem;
   }
   p {
+    width: 70%;
+    max-width: 1000px;
     padding-bottom: 1rem;
+    @media (max-width: 890px) {
+      width: 100%;
+    }
     @media (max-width: 985px) {
       padding-bottom: 0rem;
     }

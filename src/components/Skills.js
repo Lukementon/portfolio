@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-
 import javascript from "../img/logo-javascript.svg";
 import redux from "../img/redux.svg";
 import sass from "../img/sass-1.svg";
 import html from "../img/html5.svg";
 import css from "../img/css-5.svg";
 import react from "../img/react-2.svg";
+import tailwind from "../img/tailwindcss-icon.svg";
 
 const Skills = () => {
   return (
@@ -25,7 +25,10 @@ const Skills = () => {
           <img src={html} alt="sass logo" />
         </Skill>
         <Skill>
-          <img src={css} alt="sass logo" />
+          <img src={css} alt="css logo" />
+        </Skill>
+        <Skill>
+          <img src={tailwind} alt="tailwind logo" />
         </Skill>
         <Skill>
           <img src={sass} alt="sass logo" />
@@ -35,7 +38,7 @@ const Skills = () => {
         </Skill>
 
         <Skill>
-          <img src={react} alt="redux logo" />
+          <img src={react} alt="react logo" />
         </Skill>
         <Skill>
           <img src={redux} alt="redux logo" />
