@@ -5,6 +5,7 @@ import glass from "../img/glass.png";
 import Netflix from "../img/Netflix.png";
 import myignite from "../img/my-ignite.png";
 import realfitness from "../img/realfitness.png";
+import tailwind from "../img/tailwind.png";
 
 import { slider, sliderContainer, pageAnim, fadeTwo } from "../animations";
 
@@ -94,6 +95,24 @@ const Projects = () => {
         </ProjectWrapper>
         <ProjectWrapper>
           <Project>
+            <a href="https://boring-hopper-b2c592.netlify.app/">
+              <img src={tailwind} alt="myignite screenshot" />
+            </a>
+          </Project>
+          <ProjectDescription>
+            <div className="description-container">
+              <h3>Website Template</h3>
+              <p>Landing page template designed for a gym.</p>
+              <p>
+                Clean and fully responsive design with 4 main sections.
+                Animations done with AOS.
+              </p>
+              <p>No frameworks on this build just HTML and Tailwind CSS.</p>
+            </div>
+          </ProjectDescription>
+        </ProjectWrapper>
+        <ProjectWrapper>
+          <Project>
             <a href="https://inspiring-sammet-186868.netlify.app">
               <img src={glass} alt="glass screenshot" />
             </a>
@@ -101,10 +120,11 @@ const Projects = () => {
           <ProjectDescription>
             <div className="description-container">
               <h3>Glassy UI</h3>
+              <p>Simple UI desgn that gives off a glassy kind of effect.</p>
               <p>
-                Simple UI desgn that gives off a glassy kind of effect. Done
-                with basic HTML and CSS. I used the psuedo CSS attribute to give
-                the status bar the effect of being 60% full.
+                {" "}
+                Done with basic HTML and CSS. I used the psuedo CSS attribute to
+                give the status bar the effect of being 60% full.
               </p>
               <p>
                 No frameworks used in this design, just simple HTML, and CSS
