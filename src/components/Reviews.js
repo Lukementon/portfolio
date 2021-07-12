@@ -47,7 +47,7 @@ const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   line-height: 1.5rem;
-  background: rgb(25, 25, 25);
+  background: rgb(30,30,30);
   color: white;
   @media (max-width: 1640px) {
     padding: 5rem 10rem;
