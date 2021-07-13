@@ -6,6 +6,7 @@ import Netflix from "../img/Netflix.png";
 import myignite from "../img/my-ignite.png";
 import realfitness from "../img/realfitness.png";
 import tailwind from "../img/tailwind.png";
+import linkedin from "../img/linkedin.png";
 
 import { slider, sliderContainer, pageAnim, fadeTwo } from "../animations";
 
@@ -29,6 +30,27 @@ const Projects = () => {
       </motion.h1>
 
       <StyledProjects variants={fadeTwo}>
+        <ProjectWrapper>
+          <Project>
+            <a href="https://linkedin-clone-f938d.web.app/">
+              <img src={linkedin} alt="https://linkedin-clone-f938d.web.app/" />
+            </a>
+          </Project>
+          <ProjectDescription>
+            <div className="description-container">
+              <h3>LinkedIn Clone</h3>
+              <p>
+                Brand new LinkedIn clone built with React, Redux and Firebase!
+              </p>
+              <p>
+                Includes full user login and authentication done with Firebase
+                and Redux. Styling done with vanilla CSS and for icons I used
+                Material UI.
+              </p>
+              <p>Incredibly clean and fun build.</p>
+            </div>
+          </ProjectDescription>
+        </ProjectWrapper>
         <ProjectWrapper>
           <Project>
             <a href="https://real-fitness-c7b34.web.app/">
