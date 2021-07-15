@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import glass from "../img/glass.png";
 import Netflix from "../img/Netflix.png";
 import myignite from "../img/my-ignite.png";
 import realfitness from "../img/realfitness.png";
 import tailwind from "../img/tailwind.png";
 import linkedin from "../img/linkedin.png";
+import gmail from "../img/gmail.png";
 
 import { slider, sliderContainer, pageAnim, fadeTwo } from "../animations";
 
@@ -32,6 +32,24 @@ const Projects = () => {
       <StyledProjects variants={fadeTwo}>
         <ProjectWrapper>
           <Project>
+            <a href="https://clone-e4611.web.app/">
+              <img src={gmail} alt="gmail screenshot" />
+            </a>
+          </Project>
+          <ProjectDescription>
+            <div className="description-container">
+              <h3>Gmail Clone</h3>
+              <p>Brand new Gmail clone built with React, Redux and Firebase!</p>
+              <p>
+                Full google authentication for loging in and out! Redux is used
+                for authentication and for the email state. Firebase is used for
+                hosting and for the Database.
+              </p>
+            </div>
+          </ProjectDescription>
+        </ProjectWrapper>
+        <ProjectWrapper>
+          <Project>
             <a href="https://linkedin-clone-f938d.web.app/">
               <img src={linkedin} alt="https://linkedin-clone-f938d.web.app/" />
             </a>
@@ -39,9 +57,7 @@ const Projects = () => {
           <ProjectDescription>
             <div className="description-container">
               <h3>LinkedIn Clone</h3>
-              <p>
-                Brand new LinkedIn clone built with React, Redux and Firebase!
-              </p>
+              <p>LinkedIn clone built with React, Redux and Firebase!</p>
               <p>
                 Includes full user login and authentication done with Firebase
                 and Redux. Styling done with vanilla CSS and for icons I used
@@ -62,12 +78,12 @@ const Projects = () => {
               <h3>Real Fitness</h3>
               <p>
                 Personal training website for a client. Built with React and
-                uses firebase for hosting and for the contact form database.
+                uses Firebase for hosting and for the contact form database.
                 This website is fully responsive and incredibly clean.
               </p>
               <p>
-                Technologies used include react, javascript, firebase,
-                react-router, vanilla css and styled components.
+                Technologies used include React, JavaScript, Firebase,
+                React-Router, Vanilla CSS and Styled Components.
               </p>
             </div>
           </ProjectDescription>
@@ -100,15 +116,11 @@ const Projects = () => {
           <ProjectDescription>
             <div className="description-container">
               <h3>Redux Gaming App</h3>
-              <p>
-                A similar version of the previous application but with a few
-                changes. I've used Redux for the state management this time and
-                have made a few changes to the UI and layout of the website.
-              </p>
+              <p>Gaming app built with React, Redux and Styled Components.</p>
               <p>
                 Three categories of games are rendered as soon as the page
                 loads. I've also added a game details component so that when the
-                user clicks on a game it pulls out more content from the API
+                user clicks on a game, it pulls out more content from the API
                 such as the rating, available platforms, a description and
                 screenshots.
               </p>
@@ -130,28 +142,6 @@ const Projects = () => {
                 Animations done with AOS.
               </p>
               <p>No frameworks on this build just HTML and Tailwind CSS.</p>
-            </div>
-          </ProjectDescription>
-        </ProjectWrapper>
-        <ProjectWrapper>
-          <Project>
-            <a href="https://inspiring-sammet-186868.netlify.app">
-              <img src={glass} alt="glass screenshot" />
-            </a>
-          </Project>
-          <ProjectDescription>
-            <div className="description-container">
-              <h3>Glassy UI</h3>
-              <p>Simple UI desgn that gives off a glassy kind of effect.</p>
-              <p>
-                {" "}
-                Done with basic HTML and CSS. I used the psuedo CSS attribute to
-                give the status bar the effect of being 60% full.
-              </p>
-              <p>
-                No frameworks used in this design, just simple HTML, and CSS
-                styling.
-              </p>
             </div>
           </ProjectDescription>
         </ProjectWrapper>
