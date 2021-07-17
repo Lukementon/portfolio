@@ -7,6 +7,7 @@ import realfitness from "../img/realfitness.png";
 import tailwind from "../img/tailwind.png";
 import linkedin from "../img/linkedin.png";
 import gmail from "../img/gmail.png";
+import whatsapp from "../img/whatsapp5.png";
 
 import { slider, sliderContainer, pageAnim, fadeTwo } from "../animations";
 
@@ -30,6 +31,23 @@ const Projects = () => {
       </motion.h1>
 
       <StyledProjects variants={fadeTwo}>
+        <ProjectWrapper>
+          <Project>
+            <a href="https://whatsapp-clone-three-mu.vercel.app/">
+              <img src={whatsapp} alt="whatsapp Screenshot" />
+            </a>
+          </Project>
+          <ProjectDescription>
+            <div className="description-container">
+              <h3>WhatsApp Clone</h3>
+              <p>WhatsApp clone built with NextJS, React, and Firebase!</p>
+              <p>
+                Includes full Google login authentication. Styling done with
+                Styled Components and for icons I used Material UI.
+              </p>
+            </div>
+          </ProjectDescription>
+        </ProjectWrapper>
         <ProjectWrapper>
           <Project>
             <a href="https://clone-e4611.web.app/">
@@ -168,7 +186,6 @@ const Container = styled(motion.div)`
   @media (max-width: 770px) {
     padding: 5rem 1rem;
   }
-
   h1 {
     font-size: 3rem;
     padding: 0rem 0rem 3rem 0rem;
