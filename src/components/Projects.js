@@ -8,6 +8,7 @@ import tailwind from "../img/tailwind.png";
 import linkedin from "../img/linkedin.png";
 import gmail from "../img/gmail.png";
 import whatsapp from "../img/whatsapp5.png";
+import amazon from "../img/amazon.png";
 
 import { slider, sliderContainer, pageAnim, fadeTwo } from "../animations";
 
@@ -31,6 +32,28 @@ const Projects = () => {
       </motion.h1>
 
       <StyledProjects variants={fadeTwo}>
+        <ProjectWrapper>
+          <Project>
+            <a href="https://amazon-2-0-mauve.vercel.app/">
+              <img src={amazon} alt="Amazon Screenshot" />
+            </a>
+          </Project>
+          <ProjectDescription>
+            <div className="description-container">
+              <h3>Amazon Clone</h3>
+              <p>
+                Amazon clone built with NextJS, React, Redux, Tailwind CSS,
+                Stripe and Firebase!
+              </p>
+              <p>
+                Incredibly clean, responsive and fully functional Amazon clone.
+                Includes Google login and payment functionality with Stripe.
+                I've used Redux to manage the products, users and the checkout
+                basket.
+              </p>
+            </div>
+          </ProjectDescription>
+        </ProjectWrapper>
         <ProjectWrapper>
           <Project>
             <a href="https://whatsapp-clone-three-mu.vercel.app/">
