@@ -9,6 +9,7 @@ import linkedin from "../img/linkedin.png";
 import gmail from "../img/gmail.png";
 import whatsapp from "../img/whatsapp5.png";
 import amazon from "../img/amazon.png";
+import airbnb from "../img/air-bnb.png";
 
 import { slider, sliderContainer, pageAnim, fadeTwo } from "../animations";
 
@@ -32,6 +33,27 @@ const Projects = () => {
       </motion.h1>
 
       <StyledProjects variants={fadeTwo}>
+        <ProjectWrapper>
+          <Project>
+            <a href="https://luke-air-bnb-clone.vercel.app/">
+              <img src={airbnb} alt="Airbnb Screenshot" />
+            </a>
+          </Project>
+          <ProjectDescription>
+            <div className="description-container">
+              <h3>Airbnb Clone</h3>
+              <p>
+                Airbnb clone built with NextJS, React, Mapbox and Tailwind CSS!
+              </p>
+              <p>
+                Amazing fully responsive Airbnb clone that features server side
+                rendering and static site generation. I've implemented Mapbox
+                for the location of the search results. Tailwind CSS used for
+                all of the styling.
+              </p>
+            </div>
+          </ProjectDescription>
+        </ProjectWrapper>
         <ProjectWrapper>
           <Project>
             <a href="https://amazon-2-0-mauve.vercel.app/">
